@@ -1,6 +1,5 @@
+document.getElementById("nameOne").innerHTML = "Kalyn";
+document.getElementById("nameTwo").innerHTML = "Irma";
 
-// let teamMatesTwo = document.getElementById("nameOne");
-// let teamMateTwo = document.getElementById("nameTwo");
-
-let userName = ["kalyn", " irma"];
-document.getElementById("teamMates").innerHTML = userName;
+//let userName = ["kalyn", " irma"];
+//document.getElementById("teamMates").innerHTML = userName;
