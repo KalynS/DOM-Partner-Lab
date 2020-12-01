@@ -21,6 +21,7 @@ if (response == "small") {
 }
 
 // sizer()
+
 const background = () => {
 
     let bgcolor = prompt ("Enter a color for the background.")
@@ -28,5 +29,40 @@ const background = () => {
 
 }
 
-background()
+// background()
+
+const teamMembers = () => {
+
+    teamMemNum = prompt("How many team members do you have?")
+    parseInt(teamMemNum)
+    let teamList = []
+
+    for (let i = 0; i < teamMemNum; i++) {
+        let memName = prompt("Please enter a member's name")
+        teamList.push(memName)
+    }
+  
+    console.log(teamList)
+
+}
+
+teamMembers()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
