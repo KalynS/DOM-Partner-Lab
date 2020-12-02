@@ -2,6 +2,7 @@ document.getElementById("nameOne").innerHTML = "Kalyn";
 document.getElementById("nameTwo").innerHTML = "Irma";
 let logo = document.getElementById('logo')
 
+
 const sizer = () => {
 
 let response = prompt("Please enter the value 'small' or 'large'")
@@ -46,7 +47,23 @@ const teamMembers = () => {
 
 }
 
-teamMembers()
+const userNamePrompt = () => {
+
+let userNameInput = prompt('Please enter your name')
+
+let mainDiv = document.getElementById('mainDiv')
+let userName = document.createElement('h1')
+let userNameText = document.createTextNode(userNameInput + "'s" + " Resume!")
+
+
+
+userName.appendChild(userNameText)
+mainDiv.appendChild(userName)
+}
+
+userNamePrompt()
+
+
 
 
 
