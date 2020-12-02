@@ -61,9 +61,33 @@ userName.appendChild(userNameText)
 mainDiv.appendChild(userName)
 }
 
-userNamePrompt()
+// userNamePrompt()
 
+let skills = ["JS", "Python", "CSS", "HTML"]
 
+const arrayOrder = () => {
+    let userInput = prompt("Please enter ordered or unordered.")
+    let mainDiv = document.getElementById('mainDiv')
+    let orderedList = document.createElement("ol")
+    let unorderedList = document.createElement("ul")
+    let listItems = document.createElement("li")
+    let skillsText = document.createTextNode(skills)
+   
+    if (userInput.toLowerCase() == "ordered"){
+        listItems.appendChild(skillsText)
+        orderedList.appendChild(listItems)
+        mainDiv.appendChild(orderedList)
+    } else if (userInput.toLowerCase() == "unordered"){
+        listItems.appendChild(skillsText)
+        unorderedList.appendChild(listItems)
+        mainDiv.appendChild(unorderedList)
+    } else {
+        alert("Please refresh and correct your response.")
+    }
+
+}
+
+arrayOrder()
 
 
 
