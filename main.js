@@ -87,11 +87,25 @@ const arrayOrder = () => {
 
 }
 
-arrayOrder()
+// arrayOrder()
 
 
+function getNumber(){
+    return 7
+    alert(8)
+    return 9
+}
+// let num = getNumber()
+let mainDiv = document.getElementById("mainDiv")
+let button = document.createElement("button");
+let buttonText = document.createTextNode("press here")
 
-
+button.appendChild(buttonText)
+mainDiv.appendChild(button)
+button.addEventListener('click',colorChange) 
+ function colorChange() {
+document.body.style.backgroundColor = "cyan";
+}
 
 
 
