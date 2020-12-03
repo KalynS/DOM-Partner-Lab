@@ -102,7 +102,18 @@ let buttonText = document.createTextNode("press here")
 
 button.appendChild(buttonText)
 mainDiv.appendChild(button)
-button.addEventListener('click',colorChange) 
+button.addEventListener('click', userColorChange) 
+
+function userColorChange () {
+    let userInput = document.getElementById('userInput').value
+    document.body.style.backgroundColor = userInput
+}
+
+
+
+
+
+
  function colorChange() {
     if (document.body.style.backgroundColor != "cyan") {
         document.body.style.backgroundColor = "cyan"; 
@@ -110,8 +121,6 @@ button.addEventListener('click',colorChange)
     document.body.style.backgroundColor = "salmon";
 }
 }
-
-
 
 
 
