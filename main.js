@@ -104,9 +104,12 @@ button.appendChild(buttonText)
 mainDiv.appendChild(button)
 button.addEventListener('click',colorChange) 
  function colorChange() {
-document.body.style.backgroundColor = "cyan";
+    if (document.body.style.backgroundColor != "cyan") {
+        document.body.style.backgroundColor = "cyan"; 
+    } else {
+    document.body.style.backgroundColor = "salmon";
 }
-
+}
 
 
 
